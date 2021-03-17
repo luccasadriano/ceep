@@ -1,0 +1,20 @@
+class Pessoa {
+   constructor(){
+      this.fala = "Oi!"
+   }
+   falar(){//Metodo de class
+      console.log(this.fala)
+   }
+}
+
+let p = new Pessoa()
+
+p.falar()
+
+let evento = p.falar
+
+evento()
+
+let evento2 = p.falar.bind(p)
+
+evento2()
